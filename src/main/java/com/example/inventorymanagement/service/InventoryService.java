@@ -28,4 +28,38 @@ public class InventoryService {
     public void deleteInventory(Long id) {
         inventoryRepository.deleteById(id);
     }
+
+    public Inventory addStock(Long productId, int quantity) {
+        Inventory inventory = inventoryRepository.findByProduct_Id(productId)
+                .orElseThrow(() -> new RuntimeException("Product not found in inventory"));
+
+        inventory.setStock(inventory.getStock() + quantity);
+        return inventoryRepository.save(inventory);
+    }
+
+    // Deduct stock for a product with validation
+    public Inventory deductStock(Long productId, int quantity) {
+        Inventory inventory = inventoryRepository.findByProduct_Id(productId)
+                .orElseThrow(() -> new RuntimeException("Product not found in inventory"));
+
+        if (inventory.getStock() < quantity) {
+            throw new IllegalArgumentException("Not enough stock available");
+        }
+
+        inventory.setStock(inventory.getStock() - quantity);
+        return inventoryRepository.save(inventory);
+    }
+
+    // Check stock level for a product
+    public int checkStock(Long productId) {
+        Inventory inventory = inventoryRepository.findByProduct_Id(productId)
+                .orElseThrow(() -> new RuntimeException("Product not found in inventory"));
+
+        return inventory.getStock();
+    }
+
+    // Filter low-stock products
+    public List<Inventory> getLowStockProducts(int threshold) {
+        return inventoryRepository.findByStockLessThan(threshold);
+    }
 }
