@@ -1,8 +1,6 @@
 package com.example.inventorymanagement.model;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotNull;
 
 @Entity
 public class Inventory {
@@ -11,20 +9,25 @@ public class Inventory {
     private Long id;
 
     @OneToOne
-    @JoinColumn(name = "product_id")
+    @JoinColumn(name = "product_id", nullable = false)
     private Product product;
 
-    @NotNull
-    @Min(0)
-    private int stock;
+    private int stock; 
 
-    // Getters and Setters
+    // Constructors, Getters, and Setters
+    public Inventory() {}
+
+    public Inventory(Product product, int stock) {
+        this.product = product;
+        this.stock = stock;
+    }
+
     public Long getId() {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long id){
+        this.id= this.id;
     }
 
     public Product getProduct() {
@@ -43,3 +46,5 @@ public class Inventory {
         this.stock = stock;
     }
 }
+
+
