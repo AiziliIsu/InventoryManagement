@@ -13,10 +13,17 @@ Inventory Management System using Spring Boot. The system will integrate with a 
    Get Category By ID
    ![image](https://github.com/user-attachments/assets/98ee7b7c-c3a4-4a17-ba9f-f81b8eba603f)
 
-
    Update Category
    ![image](https://github.com/user-attachments/assets/107cbb5f-508b-483a-81fd-c828bf5d3aa9)
    ![image](https://github.com/user-attachments/assets/c46c55fe-000c-4763-b0fd-2c7234beef0c)
+
+   Delete Category
+   ![image](https://github.com/user-attachments/assets/83831cde-1e8d-455c-95f7-3d8dad8cb836)
+   ![Screenshot 2024-12-18 004339](https://github.com/user-attachments/assets/d592c571-2564-46b6-990e-bdaf6cb365cf)
+
+
+
+
 
 
    Create a Product
@@ -33,12 +40,20 @@ Inventory Management System using Spring Boot. The system will integrate with a 
   ![Screenshot 2024-12-17 194335](https://github.com/user-attachments/assets/ef3ae754-030d-4b03-a690-315d0095780d)
   ![image](https://github.com/user-attachments/assets/478cf580-aae3-497c-9cb2-e882fe057519)
 
-   Search Products by Name
-   ![image](https://github.com/user-attachments/assets/2bc9caf5-de2d-4fb9-b5b1-0dabbb277be8)
+  Search Products by Name
+  ![image](https://github.com/user-attachments/assets/2bc9caf5-de2d-4fb9-b5b1-0dabbb277be8)
+
+  Filter Products by Category
+  ![image](https://github.com/user-attachments/assets/c2420e75-c523-49db-9b42-f181233a4be6)
+
+  Delete Product
+  ![image](https://github.com/user-attachments/assets/8f7a9560-9eb3-4ec5-b5c1-28d5ca2ad12a)
+  ![image](https://github.com/user-attachments/assets/f75b040d-c326-4163-badc-929d1aadcf75)
+
+
+
 
   
-   Filter Products by Category
-   ![image](https://github.com/user-attachments/assets/c2420e75-c523-49db-9b42-f181233a4be6)
 
   
   Create Inventory
@@ -53,16 +68,21 @@ Inventory Management System using Spring Boot. The system will integrate with a 
   ![image](https://github.com/user-attachments/assets/6e01c8bf-ef5d-4a64-85d3-1882a5b21b88)
 
   Add Stock to Product
- ![image](https://github.com/user-attachments/assets/4fd31ed8-73e8-45c4-96b3-efe2b5c45d0a)
- ![image](https://github.com/user-attachments/assets/faa0e4c7-e3a7-4487-a73e-ea2e4d9e306b)
+  ![image](https://github.com/user-attachments/assets/4fd31ed8-73e8-45c4-96b3-efe2b5c45d0a)
+  ![image](https://github.com/user-attachments/assets/faa0e4c7-e3a7-4487-a73e-ea2e4d9e306b)
 
- 
-Deduct Stock from Product
-![image](https://github.com/user-attachments/assets/d58fc638-d653-4dfb-918f-c558dbf79269)
-![image](https://github.com/user-attachments/assets/ccc3fdd7-14ab-4cd1-a031-c607347f3faf)
+  Deduct Stock from Product
+  ![image](https://github.com/user-attachments/assets/d58fc638-d653-4dfb-918f-c558dbf79269)
+  ![image](https://github.com/user-attachments/assets/ccc3fdd7-14ab-4cd1-a031-c607347f3faf)
 
- Get Low Stock Products. We got empty list since we have only one product with stock = 70
- ![image](https://github.com/user-attachments/assets/9bc6b2b5-0df8-4464-a855-837e5f57f09c)
+  Get Low Stock Products. We got empty list since we have only one product with stock = 70
+  ![image](https://github.com/user-attachments/assets/9bc6b2b5-0df8-4464-a855-837e5f57f09c)
+
+  Delete Inventory
+  ![image](https://github.com/user-attachments/assets/577207ba-5bf7-47db-8c3d-c75bcbf042ba)
+  ![image](https://github.com/user-attachments/assets/f8a0908f-d03c-48e7-95cf-39df875adbcb)
+
+
 
 
 
