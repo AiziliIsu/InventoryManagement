@@ -1,5 +1,5 @@
 
-package com.example.Inventory.model;
+package com.example.inventorymanagement.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

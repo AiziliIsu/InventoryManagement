@@ -1,7 +1,7 @@
-package com.example.Inventory.service;
+package com.example.inventorymanagement.service;
 
-import com.example.Inventory.model.Category;
-import com.example.Inventory.repository.CategoryRepository;
+import com.example.inventorymanagement.model.Category;
+import com.example.inventorymanagement.repository.CategoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

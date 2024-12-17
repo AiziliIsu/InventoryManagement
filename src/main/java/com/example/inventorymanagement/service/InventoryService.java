@@ -1,8 +1,8 @@
 
-package com.example.Inventory.service;
+package com.example.inventorymanagement.service;
 
-import com.example.Inventory.model.Inventory;
-import com.example.Inventory.repository.InventoryRepository;
+import com.example.inventorymanagement.model.Inventory;
+import com.example.inventorymanagement.repository.InventoryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

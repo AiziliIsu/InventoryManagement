@@ -1,4 +1,4 @@
-package com.example.Inventory;
+package com.example.inventorymanagement;
 
 
 import org.springframework.context.annotation.Bean;
@@ -13,7 +13,7 @@ public class OpenApiConfig {
         return new OpenAPI()
                 .info(new Info()
                         .title("Inventory Management API")
-                        .description("API for managing inventory, products, and categories")
+                        .description("API which manages inventory, products, and categories")
                         .version("1.0"));
     }
 }

@@ -1,7 +1,7 @@
-package com.example.Inventory.controller;
+package com.example.inventorymanagement.controller;
 
-import com.example.Inventory.model.Category;
-import com.example.Inventory.service.CategoryService;
+import com.example.inventorymanagement.model.Category;
+import com.example.inventorymanagement.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
