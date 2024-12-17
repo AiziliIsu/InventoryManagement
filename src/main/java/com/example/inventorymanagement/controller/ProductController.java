@@ -4,6 +4,7 @@ import com.example.inventorymanagement.model.Product;
 import com.example.inventorymanagement.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.http.ResponseEntity;
 
 import jakarta.validation.Valid;
 import java.util.List;
@@ -38,5 +39,17 @@ public class ProductController {
     @DeleteMapping("/{id}")
     public void deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
+    }
+
+
+    @GetMapping("/search")
+    public ResponseEntity<List<Product>> searchProducts(@RequestParam String name) {
+        return ResponseEntity.ok(productService.searchProductsByName(name));
+    }
+
+    // Filter products by category
+    @GetMapping("/filter-by-category")
+    public ResponseEntity<List<Product>> filterByCategory(@RequestParam String categoryName) {
+        return ResponseEntity.ok(productService.filterProductsByCategory(categoryName));
     }
 }
