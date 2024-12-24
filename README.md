@@ -6,10 +6,19 @@ Inventory Management: Add, deduct, and validate stock levels.
 Search and Filter: Search products by name and filter by category.
 Reports: Identify low-stock products.
 Validation: Input validation, exception handling and Logging to monitor application activity.
-Swagger Integration: API documentation.
+Swagger Integration: The API documentation for this project is available via Swagger UI. You can view and interact with the API endpoints by visiting the following URL:
+http://localhost:8080/swagger-ui.html
+
+![Screenshot 2024-12-24 154659](https://github.com/user-attachments/assets/4ef7a507-e631-4a6c-8856-8297c32ebd15)
+![Screenshot 2024-12-24 154659](https://github.com/user-attachments/assets/d5a213f4-8c26-44ac-b0b4-1f96f6c2b574)
+![Screenshot 2024-12-24 154724](https://github.com/user-attachments/assets/7dcabd48-eaad-4c9c-bb6e-77ecfb3e4c9d)
+
+
+
+
+
+
 Tools: Demonstrated using Swagger, Postman, and PGAdmin4.
-
-
 Create method for Category
 ![Screenshot 2024-12-17 190251](https://github.com/user-attachments/assets/69e99a4f-9d7b-4f0a-b322-cbcfe8b563fb)
 ![Screenshot 2024-12-17 190354](https://github.com/user-attachments/assets/e2a00fa3-04a3-40b3-a359-273c1171166c)
