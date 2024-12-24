@@ -1,21 +1,32 @@
+
 package com.example.inventorymanagement.controller;
 
 import com.example.inventorymanagement.model.Product;
 import com.example.inventorymanagement.service.ProductService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import java.util.List;
-
 @Slf4j
 @RestController
 @RequestMapping("/api/products")
+@Tag(name = "Product Management", description = "APIs for managing products in the inventory system")
 public class ProductController {
     @Autowired
     private ProductService productService;
 
+    @Operation(summary = "Get all products", description = "Retrieves a list of all products in the inventory")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Successfully retrieved products"),
+            @ApiResponse(responseCode = "500", description = "Internal server error occurred")
+    })
     @GetMapping
     public List<Product> getAllProducts() {
         log.info("Fetching all products");
@@ -24,8 +35,11 @@ public class ProductController {
         return products;
     }
 
+    @Operation(summary = "Get product by ID", description = "Retrieves a specific product by its ID")
     @GetMapping("/{id}")
-    public Product getProductById(@PathVariable Long id) {
+    public Product getProductById(
+            @Parameter(description = "ID of the product to retrieve")
+            @PathVariable Long id) {
         log.info("Fetching product with ID: {}", id);
         Product product = productService.getProductById(id);
         if (product == null) {
@@ -76,4 +90,8 @@ public class ProductController {
         return ResponseEntity.ok(products);
     }
 }
+
+
+
+
 
