@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar target/your-app-name.jar
+web: java -Dserver.port=$PORT -jar build/libs/InventoryManagement-0.0.1-SNAPSHOT.jar

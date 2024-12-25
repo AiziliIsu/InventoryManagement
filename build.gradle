@@ -5,8 +5,6 @@ plugins {
 }
 //    id 'com.heroku.sdk' version '0.6.1'
 
-
-
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 
@@ -19,7 +17,6 @@ java {
 repositories {
     mavenCentral()
 }
-
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
@@ -41,14 +38,7 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
-
-//heroku {
-//    appName = "your-heroku-app-name"
-//    includeBuildpacks = ["heroku/jvm"]
-//}
-//
-//tasks.bootJar {
-//    archiveFileName = 'inventory-management.jar'
-//    launchScript()
-//}
+tasks.bootJar {
+    archiveFileName = 'InventoryManagement-0.0.1-SNAPSHOT.jar'
+}
 
