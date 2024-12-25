@@ -1,5 +1,5 @@
 Inventory Management System
-This project is an Inventory Management System built using Spring Boot with a MySQL database. It provides REST APIs to manage products, categories, and inventory stock levels. The project meets the following requirements:
+This project is  built using Spring Boot with a PostgreSQL database. It provides REST APIs to manage products, categories, and inventory stock levels. The project meets the following requirements:
 
 CRUD Operations: Manage products and categories.
 Inventory Management: Add, deduct, and validate stock levels.
