@@ -1,16 +1,34 @@
-Inventory Management System
-This project is  built using Spring Boot with a PostgreSQL database. It provides REST APIs to manage products, categories, and inventory stock levels. The project meets the following requirements:
+## Inventory Management System
 
-CRUD Operations: Manage products and categories.
-Inventory Management: Add, deduct, and validate stock levels.
-Search and Filter: Search products by name and filter by category.
-Reports: Identify low-stock products.
-Validation: Input validation, exception handling and Logging to monitor application activity.
-Swagger Integration: The API documentation for this project is available via Swagger UI. You can view and interact with the API endpoints by visiting the following URL:
+This project is a **Spring Boot-based Inventory Management System** designed to provide a comprehensive solution for managing product information and stock levels. It uses a **PostgreSQL database** for data persistence and offers **RESTful APIs** for all key functionalities.
+
+
+### Key Features
+
+* **Product and Category Management:** Supports all **CRUD (Create, Read, Update, Delete)** operations for managing products and their categories.
+* **Inventory Control:** Allows for **adding, deducting, and validating** stock levels to ensure accurate inventory tracking.
+* **Search and Filtering:** Enables users to easily **search for products by name** and **filter them by category**.
+* **Reporting:** Generates **reports to identify products with low stock**, helping with timely restocking.
+* **Robustness and Monitoring:** Includes **input validation, exception handling, and logging** to monitor application activity and ensure data integrity.
+
+
+### Technology Stack
+
+* **Framework:** Spring Boot
+* **Database:** PostgreSQL
+* **API Documentation:** Swagger/OpenAPI
+
+
+### Getting Started
+
+The API documentation is integrated with **Swagger UI**, making it easy to test and understand the available endpoints. Once the application is running, you can access the documentation at the following URL:
+
 http://localhost:8080/swagger-ui.html
 
 ![Screenshot 2024-12-24 154659](https://github.com/user-attachments/assets/4ef7a507-e631-4a6c-8856-8297c32ebd15)
+
 ![Screenshot 2024-12-24 154659](https://github.com/user-attachments/assets/d5a213f4-8c26-44ac-b0b4-1f96f6c2b574)
+
 ![Screenshot 2024-12-24 154724](https://github.com/user-attachments/assets/7dcabd48-eaad-4c9c-bb6e-77ecfb3e4c9d)
 
 
